@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-stone-50 text-ink antialiased;
+}
+
+/* Legacy WordPress content often sets fixed widths/floats on images. Keep
+   them responsive inside the prose container. */
+.prose img {
+  height: auto;
+  max-width: 100%;
+}
+
+.prose iframe {
+  max-width: 100%;
+}
