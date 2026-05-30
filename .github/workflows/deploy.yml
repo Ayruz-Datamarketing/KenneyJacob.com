@@ -37,6 +37,13 @@ jobs:
             echo "base=/$repo" >> "$GITHUB_OUTPUT"
           fi
 
+      # Enables GitHub Pages for the repo (source = GitHub Actions) using the
+      # workflow token, so no manual Settings -> Pages toggle is required.
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22
