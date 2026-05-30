@@ -1,0 +1,47 @@
+[
+ {
+  "name": "Tech",
+  "slug": "technical",
+  "count": 154
+ },
+ {
+  "name": "Society n Culture",
+  "slug": "society-articles",
+  "count": 139
+ },
+ {
+  "name": "Campus n Education",
+  "slug": "education",
+  "count": 79
+ },
+ {
+  "name": "Politics n Media",
+  "slug": "politics-articles",
+  "count": 78
+ },
+ {
+  "name": "Gadgets, Fads n Autos",
+  "slug": "gadgets",
+  "count": 77
+ },
+ {
+  "name": "Community",
+  "slug": "pop-culture-and-social-networking",
+  "count": 62
+ },
+ {
+  "name": "Entertainment",
+  "slug": "entertainment",
+  "count": 54
+ },
+ {
+  "name": "Money",
+  "slug": "money",
+  "count": 31
+ },
+ {
+  "name": "Featured Articles",
+  "slug": "featured-articles",
+  "count": 27
+ }
+]
