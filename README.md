@@ -27,11 +27,17 @@ asset/link that pointed at the dead `kenneyjacob.com` domain is rewritten to the
 **Internet Archive (Wayback Machine)** so it still renders in a browser
 (`https://web.archive.org/web/2012id_/<original-url>`).
 
+> **Note on the raw backup:** the original `wpau-db-backuptwtDABDB.zip` is
+> **deliberately not stored in this repository** — the DB dump contains personal
+> data (user password hashes, email addresses, commenter IP addresses). The
+> sanitised, published content lives in `data/*.json`, which is all the site
+> needs. To regenerate from a backup, drop the zip in the repo root and run
+> `npm run content` (it stays git-ignored).
+
 ## Project layout
 
 ```
-wpau-db-backuptwtDABDB.zip   # original backup (source of truth)
-scripts/extract-content.py   # parses the SQL dump -> data/*.json
+scripts/extract-content.py   # parses a local SQL dump -> data/*.json (backup not committed)
 data/                        # generated content (committed)
   site.json posts.json pages.json categories.json tags.json
 lib/content.ts               # typed loaders + helpers

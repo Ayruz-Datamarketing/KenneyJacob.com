@@ -42,15 +42,10 @@ jobs:
           node-version: 22
           cache: npm
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
       - run: npm ci
 
-      - name: Generate content from the WordPress backup
-        run: npm run content
-
+      # Content lives in data/*.json (committed). The raw WordPress backup is
+      # intentionally NOT in the repo, so we build straight from that data.
       - name: Build static site
         env:
           PAGES_BASE_PATH: ${{ steps.basepath.outputs.base }}

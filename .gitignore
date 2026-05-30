@@ -14,3 +14,9 @@ next-env.d.ts
 /tmp/
 *.sql
 *.sql.gz
+
+# Raw WordPress DB backup is kept OUT of the repo: it contains PII
+# (user password hashes, emails, commenter IPs). Generated data/*.json is the
+# committed, sanitised content instead.
+*.zip
+wpau-db-backuptwtDABDB.zip
